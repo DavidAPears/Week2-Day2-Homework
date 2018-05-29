@@ -18,9 +18,7 @@ class BearTest < MiniTest::Test
     assert_equal("Polar", @bear2.type)
   end
 
-  def test_pick_up_fish
-    @bear1.pick_up(@frank)
-    assert_equal(1, @bear1.number_of_fish)
-  end
+
+
 
 end
