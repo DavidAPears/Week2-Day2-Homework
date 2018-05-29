@@ -12,11 +12,14 @@ attr_reader :name, :type, :stomach
     return "Roooaarrr!"
   end
 
-  # def test_add_bear
-  #   @bear1 new_bear(@bear1)
-  #   assert_equal(1, @bear.count)
-  # end
+  def test_pick_up_fish
+    @bear1.pick_up(@fish1)
+    assert_equal(1, @bear1.number_of_passengers)
+  end
 
+  def pick_up_fish(new_fish)
+    @stomach.push(new_fish)
+  end
 
 
 
